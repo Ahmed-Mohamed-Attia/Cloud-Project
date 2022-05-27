@@ -1,0 +1,90 @@
+.secondNavbar {
+    width: 100%;
+    height: 100px;
+    background-color: #0e0276;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+  }
+  .secondnavbar .leftSide {
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 150px;
+  }
+  .secondNavbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    margin-top: 50px;
+  }
+  
+  .secondNavbar .leftSide button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .secondNavbar .leftSide svg {
+    font-size: 40px;
+  }
+  
+  .secondNavbar #open {
+    padding-left: 0px;
+  }
+  .secondNavbar #open img {
+    display: none;
+  }
+  
+  .secondNavbar #close img {
+    display: inherit;
+  }
+  
+  .secondNavbar #open .hiddenLinks {
+    display: inherit;
+    margin-left: 30px;
+  }
+  
+  .secondNavbar #close .hiddenLinks {
+    display: none;
+  }
+  
+  .secondNavbar #open a {
+    width: 70px;
+    margin: 5px;
+  }
+  @media only screen and (max-width: 900px) {
+    .secondNavbar .leftSide a {
+      width: 70px;
+    }
+    .secondNavbar .leftSide {
+      padding-left: 50px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .secondNavbar .leftSide a {
+      display: none;
+    }
+  
+    .secondNavbar .leftSide {
+      justify-content: flex-end;
+      padding-right: 50px;
+    }
+  
+    .secondNavbar .leftSide button {
+      display: inherit;
+    }
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .secondNavbar .leftSide button {
+      display: none;
+    }
+  
+    .hiddenLinks {
+      display: none;
+    }
+  }

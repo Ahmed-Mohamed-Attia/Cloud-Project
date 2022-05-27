@@ -1,0 +1,179 @@
+/* open-sans-regular - latin - modern browsers  */
+@font-face {
+    font-family: 'cairo';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../assets/fonts/cairo.ttf')
+}
+ 
+body { 
+        font-family: 'cairo';  
+}
+html, body, #root  , #root {
+    height: 100%;
+  }
+.Content{
+    min-height:100%;
+
+}
+.dropdown-item {
+    padding: 0.25rem 0.8rem;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+a:hover {
+        color: #969696;
+}
+.slider{
+    padding: 23px 0;
+}
+.slider_wrapper{
+    margin: auto;
+}
+.bg-dark
+{
+  background-color: #1C1252!important;
+}
+.up_nav
+{
+  background-color: rgb(10, 10, 31) !important;
+}
+.socialMedia
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 2px ;
+}
+.follow
+{
+    color: white;
+}
+.slider .product_box{
+    display: block;
+    position: relative;
+    background-color: #f0f0f0;
+}
+.slider .owl-carousel .owl-item img  {
+    max-height: 340px;
+    /* max-width: 289px; */
+}    
+.slider .owl-item{
+    margin: auto;
+    overflow: hidden;
+}
+.slider .product_image {
+    min-height: 340px;
+
+}
+.slider .product_title{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.product .card
+{
+  display: inline-block;
+  margin: 17px;
+
+}
+ 
+.card .card-body{
+    position: relative;
+    bottom: 0;
+}
+.card   img{
+   /* min-height: 253px; */
+
+}
+.login-container{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.login-form-1{
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit
+{
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    font-weight: 600;
+    color: #fff;
+    background-color: #0062cc;
+}
+
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+.product_box{
+    display: block;
+    position: relative;
+    background-color: #f0f0f0;
+}
+.owl-item img  {
+    max-height: 240px;
+    /* max-width: 289px; */
+    padding: 13px;
+}    
+.owl-item{
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+}
+.product_image {
+    min-height: 243px;
+
+}
+.product_title{
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+
+ 
+.card .card-body{
+    margin: 36px;
+
+}
+.card   img{
+    /* position: relative;
+    bottom: 104px; */
+    margin-bottom: 44px;
+
+}
+.leftSide{
+    margin: auto;
+}
+.product_details{
+    margin: auto 0;
+    padding: 0 19px;
+
+}
+.text{
+    text-align: center;
+}
+#para2{
+    text-align: center;
+}
