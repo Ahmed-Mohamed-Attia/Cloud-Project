@@ -10,11 +10,7 @@ import '../styles/style.css'
 function Navbar()
 {
     return(
-
-
-
-
-
+        
         <div className='navbar'> 
         <div className='leftSide'>
             <img src={logo} alt='logo' />
@@ -22,8 +18,12 @@ function Navbar()
         <div className='rightSide'>
             <Link to='/'>Home</Link>
             <Link to='/Categories'>Categories</Link>
-            <Link to='/about'>About</Link>
+            <Link to='/profile'>Profile</Link>
             <Link to='/contact'>Contact</Link>
+            <form class="form-inline my-2 my-lg-0" method="GET" action="index.php">
+            <input class="form-control mr-sm-2" name="k" type="search" placeholder="Search" aria-label="Search"/>
+        </form>
+
         </div>
     </div>
     )
