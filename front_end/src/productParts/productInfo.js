@@ -1,6 +1,4 @@
 import React from "react";
-
- 
 import {AllList} from '../productParts/productList';
 import { useParams } from 'react-router-dom';
 import Swal from 'sweetalert2'

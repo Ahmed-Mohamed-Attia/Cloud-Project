@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/core
+    ports:
+      - 3000:3000
+
+    image: app:react
+    #container_name: react_container  
+    command: npm start
+
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 7070:80
+    environment:
+      - PMA_ARBITRARY=0
+    depends_on:
+      - database
+    links:
+      - database:db
+
+  database:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    volumes:
+      - database:/var/lib/mysql
+
+
+volumes:
+  database:
+      
+      
