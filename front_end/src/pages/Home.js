@@ -5,6 +5,7 @@ import 'react-owl-carousel2/lib/styles.css'; //Allows for server-side rendering.
 import 'react-owl-carousel2/src/owl.theme.default.css';
 import {AllList} from '../productParts/productList';
 import ProductItem from "../productParts/productItem";
+import Navbar from '../components/Navbar';
 function Home() 
 {
     const options = {
@@ -19,7 +20,9 @@ function Home()
         autoplayHoverPause:true,
     };
     return (
-        <div className="Content">             
+        
+        <div className="Content">   
+        <Navbar/>          
             {/* // Start Slider  */}
             <div class="slider">
                 <OwlCarousel options={options} >

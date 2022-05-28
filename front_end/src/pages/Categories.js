@@ -5,12 +5,14 @@ import Accessories from "../pages/productCategory/Accessories";
 import Consoles from "../pages/productCategory/Consoles";
 import Proccessors from "../pages/productCategory/Proccessors";
 import {Route, Routes  } from "react-router-dom";
+import Navbar from '../components/Navbar';
 
 
 function Categories() 
 {
     return (
         <div>
+            <Navbar/>
             <Category/>
             <Routes>
              <Route path='/' element={<AllProducts/>}></Route>

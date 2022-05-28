@@ -1,5 +1,6 @@
 import React from "react";
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
+import Navbar from '../components/Navbar';
 function Contact() 
 {
     const successAlert = (e) => {
@@ -14,6 +15,7 @@ function Contact()
     
     return (
         <div>
+            <Navbar/>
 <div>
     <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
         src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Kolayet%20Al%20Oloum,%20Al%20Azaritah%20WA%20Ash%20Shatebi,%20Qism%20Bab%20Sharqi,%20Alexandria%20Governorate+(Faculty%20of%20Science,%20Alexandria%20University%D9%83%D9%84%D9%8A%D8%A9%20%D8%A7%D9%84%D8%B9%D9%84%D9%88%D9%85%20-%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B7%D8%A8%D9%8A)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>

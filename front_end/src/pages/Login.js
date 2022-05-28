@@ -1,9 +1,11 @@
 import React from "react";
 import loginImg from "../assets/logo1.png";
+import { Link } from "react-router-dom";
 
 function Login()
 {
-  return( <div className="base-container" ref={this.props.containerRef}>
+  return( 
+  <div className="base-container" >
      <div className="header">Login</div>
      <div className="content">
        <div className="image">
@@ -20,11 +22,12 @@ function Login()
          </div>
        </div>
      </div>
-     <div className="footer">
-       <button type="button" className="btn">
-         Login
-       </button>
-     </div>
+     
+     <button class="btn btn-primary " id="submit" type="submit" >
+     <Link to='/Home'>Login</Link>                    
+    </button>
+    <a><Link to='/Signup'>Signup</Link>  </a>
+     
    </div>);
 }
 export default Login;

@@ -1,9 +1,11 @@
 import React from "react";
+import Navbar from '../components/Navbar';
 
 function Profile() {
   return (
               
     <div className="Content">
+      <Navbar/>
       <div className="container ">
         <div className="product">
           <div className="row justify-content-center text-left">

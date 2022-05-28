@@ -1,11 +1,13 @@
 import React from "react";
-import loginImg from "front_end\src\assets\logo1.png";
+import loginImg from "../assets/logo1.png";
+import { Link } from "react-router-dom";
+
 
 function Signup() 
 {
  return(
 
-  <div className="base-container" ref={this.props.containerRef}>
+  <div className="base-container" >
   <div className="header">Register</div>
   <div className="content">
     <div className="image">
@@ -26,11 +28,11 @@ function Signup()
       </div>
     </div>
   </div>
-  <div className="footer">
-    <button type="button" className="btn">
-      Register
+ 
+  <button class="btn btn-primary " id="submit" type="submit" >
+     <Link to='/'>Register</Link>                    
     </button>
-  </div>
+  
 </div>
 
  ); 
