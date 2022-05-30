@@ -8,6 +8,7 @@ import Product from './productParts/productInfo';
 import Footer from './components/Footer';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Cart from './pages/Cart';
 
 function App() {
   let { url } = useLocation ();
@@ -17,6 +18,7 @@ function App() {
        
        <Routes>
         <Route path='/'               element={<Login/>}></Route>
+        <Route path='/Cart'               element={<Cart/>}></Route>
         <Route path='/Home'               element={<Home/>}></Route>
         <Route path='/Signup'               element={<Signup/>}></Route>
         <Route path='/product/:id'    element={<Product/>}></Route>
