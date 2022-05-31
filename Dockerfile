@@ -1,6 +1,6 @@
-FROM node:15.13-alpine
-WORKDIR /core
+FROM node:15.13-alpine as builder
+COPY front_end ./
+RUN npm install
 ENV PATH="./front_end/node_modules/.bin:$PATH"
-COPY . .
 RUN npm run build
-CMD ["npm","start"]
+CMD [ "npm", "run", "start" ]

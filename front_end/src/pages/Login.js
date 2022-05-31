@@ -12,20 +12,25 @@ function Login()
          <img src={loginImg} />
        </div>
        <div className="form">
-         <div className="form-group">
-           <label htmlFor="username">Username</label>
-           <input type="text" name="username" placeholder="username" />
-         </div>
-         <div className="form-group">
-           <label htmlFor="password">Password</label>
-           <input type="password" name="password" placeholder="password" />
-         </div>
+         <form method="POST" action="http://localhost/test/login.php"> 
+            <div className="form-group">
+                      <label htmlFor="username">Username</label>
+                      <input type="text" name="username" placeholder="username" />
+                    </div>
+                    <div className="form-group">
+                      <label htmlFor="password">Password</label>
+                      <input type="password" name="password" placeholder="password" />
+                    </div>
+                    <button class="btn btn-primary " id="submit" type="submit" >
+     Login                    
+    </button>
+
+         </form>
+        
        </div>
      </div>
      
-     <button class="btn btn-primary " id="submit" type="submit" >
-     <Link to='/Home'>Login</Link>                    
-    </button>
+     
     <a><Link to='/Signup'>Signup</Link>  </a>
      
    </div>);

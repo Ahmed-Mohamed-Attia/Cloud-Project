@@ -10,7 +10,8 @@ import axios from 'axios';
 class Profile extends Component
 {
     state={
-        products : []
+        products : [],
+        user :[]
         
     }
     componentDidMount()
@@ -20,6 +21,16 @@ class Profile extends Component
             this.setState(
                 {
                     products: res.data
+                }
+            )
+        }
+        )
+
+        axios.get("http://localhost/test/profile.php")
+        .then(res=>{
+            this.setState(
+                {
+                    user: res.data
                 }
             )
         }
@@ -40,24 +51,26 @@ class Profile extends Component
           <div className="row justify-content-center text-left">
         
               <div className="card-body text-center">
-                    <img
-                        src="../imgs/1.jpg"
-                        className="rounded-circle"
-                        width="200px"
-                        height="200px"
-                      />
-                    <h1 className="fs-2 mb-3 font-weight-bold">
-                        Hady Hassan 
-                      </h1>
-                      <h1 className="fs-2 mb-3 font-weight-bold">
-                         hadyhassan@gmail.com
-                      </h1>
-                      <h1 className="fs-2 mb-3 font-weight-bold">
-                        01284630902
-                      </h1>
-                      <h1 className="fs-2 mb-3 font-weight-bold">
-                        Elhadra
-                      </h1>
+                {this.state.user.map((item,key)=>{
+                    return(
+                        <div>
+                            <h1 className="fs-2 mb-3 font-weight-bold">
+                                {item.name}
+                         </h1>
+                         <h1 className="fs-2 mb-3 font-weight-bold">
+                            {item.email}
+                         </h1>
+                         <h1 className="fs-2 mb-3 font-weight-bold">
+                           {item.phone}
+                         </h1>
+                         <h1 className="fs-2 mb-3 font-weight-bold">
+                           {item.location}
+                         </h1>
+
+                        </div>
+                    );
+                })}
+                    
               </div>
 
                

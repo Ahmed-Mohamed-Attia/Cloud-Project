@@ -1,9 +1,23 @@
 version: '3.8'
 services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile2
+    working_dir: /api
+    ports:
+      - 9090:9090
+    depends_on:
+      - database
+    links:
+      - database:db
+    command: "php  -S 0.0.0.0:9090 "
+
   app:
     build: 
       context: .
       dockerfile: Dockerfile
+      
     volumes:
       - .:/core
     ports:
@@ -11,7 +25,7 @@ services:
 
     image: app:react
     #container_name: react_container  
-    command: npm start
+    command: npm run start
 
   phpmyadmin:
     image: phpmyadmin

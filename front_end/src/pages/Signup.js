@@ -28,7 +28,7 @@ function Signup()
       <img src={loginImg} />
     </div>
     <div className="form">
-      <form>
+      <form method="POST" action="http://localhost/test/signup.php">
 
       <div className="form-group">
         <label htmlFor="username">Username</label>
@@ -51,7 +51,7 @@ function Signup()
         <input type="text" name="location" placeholder="location" />
       </div>
       <button class="btn btn-primary " id="submit" type="submit" >
-          <Link to='/'>Register</Link>                    
+          <Link to='/'></Link> Register                  
       </button>
         
       </form>

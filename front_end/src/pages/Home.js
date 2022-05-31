@@ -37,7 +37,7 @@ class Home extends Component
         }
         )
 
-        axios.get("http://localhost/test/")
+        axios.get("http://localhost/test/recommendation.php")
         .then(res=>{
             this.setState(
                 {

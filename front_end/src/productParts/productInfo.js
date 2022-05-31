@@ -13,6 +13,8 @@ function ProductInfo (props) {
             icon: 'success'
           }); 
     }
+
+    let cart = [];
     
     let { id } = useParams();
     let product_data = AllList.filter(product => product.id == id) ;
